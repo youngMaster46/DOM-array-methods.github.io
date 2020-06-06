@@ -2,7 +2,7 @@ const main = document.getElementById('main')
 const addUserBtn = document.getElementById('add-user')
 const doubleBtn = document.getElementById('double')
 const showMillionairesBtn = document.getElementById('show-millionaires')
-const sortBtn = document.getElementById ('sort')
+const sortBtn = document.getElementById('sort')
 const calculateWealthBtn = document.getElementById('calculate-wealth')
 
 let data = []
@@ -18,11 +18,26 @@ async function getRandomUser() {
         money: Math.floor(Math.random() * 1000000)
     }
 
-   addData(newUser)
+    addData(newUser)
 }
+
 function addData(obj) {
     data.push(obj)
+
+    updateDOM()
 }
+
+// Update DOM
+function updateDOM(providedData = data) {
+    main.innerHTML = '<h2><strong>Person</strong>Wealth</h2>'
+    providedData.forEach((el) => {
+          const element = document.createElement('div')
+          element.classList.add('person')
+          element.innerHTML = `<strong>${el.name}</strong> ${el.money}`;
+          main.appendChild(element)
+    })
+}
+
 getRandomUser()
 getRandomUser()
 getRandomUser()
