@@ -51,3 +51,20 @@ h2 {
     font-weight: 300;
     margin: 0 0 20px;
 }
+
+h2 {
+    background-color: #fff;
+    border-bottom: 1px solid #111;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    margin: 20px 0 0;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
