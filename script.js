@@ -44,6 +44,9 @@ function formatMoney(number) {
     return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g,'$&,');
 }
 
+// Event listeners
+addUserBtn.addEventListener('click', getRandomUser)
+
 getRandomUser()
 getRandomUser()
 getRandomUser()
