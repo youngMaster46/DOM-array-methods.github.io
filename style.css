@@ -68,3 +68,27 @@ h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+.span-color {
+    color: gray;
+}
+
+.span-color_red {
+    color: red;
+}
+
+.span-color_blue {
+    color: blue;
+}
+
+.span-color_lime {
+    color: lime;
+}
+
+.span-color_green {
+    color: green;
+}
+
+.span-color_pink {
+    color: pink;
+}
